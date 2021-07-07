@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo.](https://github.com/emmanuelurbina/four-card-frontend-mentor)
+- Live Site URL: [Live](http://emmanuelurbina.xyz/four-card-frontend-mentor/)
 
 ## My process
 
