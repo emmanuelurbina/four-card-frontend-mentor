@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    :root{
+      --very-dark-blue: hsl(234, 12%, 34%);
+      --grayish-blue: hsl(229, 6%, 66%);
+      --very-light-gray: hsl(0, 0%, 98%);
+      --red: hsl(0, 78%, 62%);
+      --cyan: hsl(180, 62%, 55%);
+      --orange: hsl(34, 97%, 64%);
+      --blue: hsl(212, 86%, 64%);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins',sans-serif;
+      background: var(--very-light-gray);
+    }
+
+    .main {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    .main .wrapper {
+      width: 550px;
+      height:auto;
+      text-align: center;
+    }
+    .main .wrapper h1,h2 {
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .main .wrapper h2 {
+      color: var(--very-dark-blue);
+    }
+    .main .wrapper h1 {
+      color: var(--grayish-blue);
+      font-weight: 200;
+    }
+    .main .wrapper p {
+      color: var(--grayish-blue);
+    }
+    .card {
+      width: 350px;
+      height: 250px;
+      background: #fff;
+      box-shadow: 0px 15px 12px -4px rgba(132,157,184,0.62);
+      position:relative;
+      border-radius: 16px;
+    }
+    .card__content{
+      margin: 16px;
+    }
+    .card h5 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card p {
+      color: var(--grayish-blue);
+      font-size: 15px;
+    }
+     .card__image {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+    }
+
+    .row  .wrapper:nth-child(1) .card{
+      border-top: solid 6px var(--cyan);
+    }
+
+    .row  .wrapper:nth-child(2) .card:nth-child(1){
+      border-top: solid 6px var(--red);
+    }
+    .row  .wrapper:nth-child(2) .card:nth-child(2){
+      border-top: solid 6px var(--orange);
+    }
+    .row  .wrapper:nth-child(3) .card{
+      border-top: solid 6px var(--blue);
+    }
+
+    .row {
+      width: 100%;
+      height:auto;
+      display:flex;
+      flex-direction:row;
+      gap: 28px;
+      justify-content:center;
+    }
+    .row .wrapper {
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:28px;
+    }
+    footer {
+      margin-top: 30px;
+      text-align:center;
+      background: #fff;
+    }
+    footer p {
+      padding:16px;
+    }
+    @media screen and (max-width: 376px) {
+      body {
+        padding:16px;
+      }
+      .main .wrapper {
+        width: 100%;
+      }
+      .main .wrapper h1,h2{
+        font-size: 25px;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .card {
+        width: 100%;
+      }
+      .card__image {
+        width: 50px;
+        height:50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <div class="wrapper">
+      <h1>
+        Reliable, efficient delivery
+      </h1>
+      <h2>
+        Powered by Technology
+      </h2>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful
+      </p>
+    </div>
+  </main>
+
+
+  <section class="row">
+    <div class="wrapper">
+      <article class="card">
+        <div class="card__content">
+          <h5>
+            Supervisor
+          </h5>
+          <p>
+            Monitors activity to identify project roadblocks
+          </p>
+          <img src="./images/icon-supervisor.svg" alt="Supervisor imagen" class="card__image">
+        </div>
+      </article>
+    </div>
+    <div class="wrapper">
+      <article class="card">
+        <div class="card__content">
+
+          <h5>
+            Team Builder
+          </h5>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img src="./images/icon-team-builder.svg" alt="Team Builder image" class="card__image">
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__content">
+
+          <h5>
+            Karma
+          </h5>
+          <p>
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img src="./images/icon-karma.svg" alt="Karma image" class="card__image">
+        </div>
+      </article>
+    </div>
+    <div class="wrapper">
+
+      <article class="card">
+        <div class="card__content">
+
+          <h5>
+
+            Calculator
+          </h5>
+          <p>
+
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img src="./images/icon-calculator.svg" alt="Calculator image" class="card__image">
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="http://emmanuelurbina.xyz">Emmanuel Lucio Urbina</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
